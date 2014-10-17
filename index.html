@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+	<title>My To-do List</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="sweet-alert.css" />
+  </head>
+  <body>
+
+    <div id="container">
+        <div class="header">
+          <h2>To Do App</h2>
+          <div> Enter a task, then click the Add Task button.</div>
+          <div>Click on a task to remove it or readd it to the list.</div>
+  			</div>
+        <div tag="formdiv">
+          <form name="form" id="form">
+    			  <input type="textbox" id="textbox" placeholder="Content"></input>
+    			  <input type="button" class="btn btn-primary" value="Add Task" onclick="add();" id="button1" />
+            <input type="button" class="btn btn-secondary" value="Show/Hide Previous Tasks" onclick="toggleTasks();" id="button2"/>
+          </form>
+        </div>
+          <div id="status">Tasks Todo</div>
+          <div id="completed" style="display: none">Completed Tasks</div>
+          <div tag="listdiv">
+            <ul id="list"></ul>
+          </div>  
+    </div>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.ui.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="sweet-alert.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="appTrial.js"></script>
+
+  </body>
+</html>
+
+
+
